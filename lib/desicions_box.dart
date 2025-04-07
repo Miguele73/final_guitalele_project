@@ -14,12 +14,25 @@ class DesicionsBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xFFDE7A22),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        boxShadow: [
+          BoxShadow(
+            color: color,
+            spreadRadius: 2,
+            blurRadius: 2,
+            offset: const Offset(0, 3),
+          ),
+        ],
+      ),
+      padding: const EdgeInsets.all(8),
+      margin: const EdgeInsets.all(8),
+
       width: 300,
       child: Row(
         children: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.library_music_rounded)),
-          Text('Songs'),
+          IconButton(onPressed: () {}, icon: icon),
+          Text(selectionText),
         ],
       ),
     );
