@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 class DesicionsBox extends StatelessWidget {
   final Color color;
   final String selectionText;
-  final Icon icon;
+  final ImageIcon imageIcon;
   const DesicionsBox({
     super.key,
     required this.color,
     required this.selectionText,
-    required this.icon,
+    required this.imageIcon,
   });
 
   @override
@@ -31,7 +31,7 @@ class DesicionsBox extends StatelessWidget {
       width: 300,
       child: Row(
         children: [
-          IconButton(onPressed: () {}, icon: icon),
+          IconButton(onPressed: () {}, icon: imageIcon),
           Text(selectionText),
         ],
       ),

@@ -17,13 +17,18 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: const Color(0xFF505160),
         appBar: AppBar(
-          backgroundColor: const Color(0xFF505160),
           toolbarHeight: 250,
-          flexibleSpace: Padding(
-            padding: const EdgeInsets.fromLTRB(32, 64, 32, 128),
-            child: Image.asset('assets/logo.png', height: 200, width: 200, ,),
-          ),
+          backgroundColor: const Color(0xFF505160),
+          title: Image.asset('assets/images/logo.png', height: 200, width: 200),
+
+          // flexibleSpace: Padding(
+          // padding: const EdgeInsets.all(32),
+          // child: SizedBox(
+          // height: 200,
+          // width: 200,
+          // child:
         ),
+
         floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
         floatingActionButton: const OneBackButton(),
         body: Padding(
@@ -35,27 +40,41 @@ class MainApp extends StatelessWidget {
               DesicionsBox(
                 color: Color(0xFFDE7A22),
                 selectionText: 'Songs',
-                icon: const Icon(Icons.library_music_rounded),
+                imageIcon: ImageIcon(
+                  AssetImage('assets/iconImages/music-4SongsIcon.png'),
+                ),
               ),
               DesicionsBox(
                 color: Color(0xFFD5C9B1),
                 selectionText: 'Chords',
-                icon: const Icon(Icons.library_music_outlined),
+                imageIcon: ImageIcon(
+                  AssetImage('assets/iconImages/ChordIcon.png'),
+                ),
               ),
               DesicionsBox(
                 color: Color(0xFFBCBABE),
                 selectionText: 'Scales',
-                icon: const Icon(Icons.music_note_outlined),
+                imageIcon: ImageIcon(
+                  AssetImage('assets/iconImages/ClefIcon.png'),
+                  size: 24,
+                  color: Colors.white,
+                ),
               ),
               DesicionsBox(
                 color: Color(0xFFBFDCCF),
-                selectionText: 'Exercises',
-                icon: const Icon(Icons.format_textdirection_l_to_r),
+                selectionText: 'Chordliste',
+                imageIcon: ImageIcon(
+                  AssetImage('assets/iconImages/ChordIcon.png'),
+                ),
               ),
               DesicionsBox(
-                color: Color(0xFFBFDCCF),
-                selectionText: 'Settings',
-                icon: const Icon(Icons.queue_music_outlined),
+                color: Color(0xFFE05858),
+                selectionText: 'Meine Favoriten',
+                imageIcon: ImageIcon(
+                  AssetImage('assets/iconImages/FavoritesBookmark.png'),
+                  size: 36,
+                  color: const Color.fromARGB(116, 255, 255, 255),
+                ),
               ),
             ],
           ),
