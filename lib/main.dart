@@ -56,8 +56,7 @@ class MainApp extends StatelessWidget {
                 selectionText: 'Scales',
                 imageIcon: ImageIcon(
                   AssetImage('assets/iconImages/ClefIcon.png'),
-                  size: 24,
-                  color: Colors.white,
+                  size: 28,
                 ),
               ),
               DesicionsBox(
@@ -72,8 +71,7 @@ class MainApp extends StatelessWidget {
                 selectionText: 'Meine Favoriten',
                 imageIcon: ImageIcon(
                   AssetImage('assets/iconImages/FavoritesBookmark.png'),
-                  size: 36,
-                  color: const Color.fromARGB(116, 255, 255, 255),
+                  size: 24,
                 ),
               ),
             ],
