@@ -2,8 +2,8 @@ import 'package:final_guitalele_project/desicions_box.dart';
 import 'package:final_guitalele_project/one_back_button.dart';
 import 'package:flutter/material.dart';
 
-class DesictionScreen extends StatelessWidget {
-  const DesictionScreen({super.key});
+class DesicionScreen extends StatelessWidget {
+  const DesicionScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

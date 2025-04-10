@@ -13,27 +13,31 @@ class DesicionsBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        boxShadow: [
-          BoxShadow(
-            color: color,
-            spreadRadius: 2,
-            blurRadius: 2,
-            offset: const Offset(0, 3),
-          ),
-        ],
-      ),
-      padding: const EdgeInsets.all(8),
-      margin: const EdgeInsets.all(8),
+    return GestureDetector(
+      onTap: () {},
 
-      width: 300,
-      child: Row(
-        children: [
-          IconButton(onPressed: () {}, icon: imageIcon),
-          Text(selectionText),
-        ],
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: [
+            BoxShadow(
+              color: color,
+              spreadRadius: 2,
+              blurRadius: 2,
+              offset: const Offset(0, 3),
+            ),
+          ],
+        ),
+        padding: const EdgeInsets.all(8),
+        margin: const EdgeInsets.all(8),
+
+        width: 300,
+        child: Row(
+          children: [
+            IconButton(onPressed: () {}, icon: imageIcon),
+            Text(selectionText),
+          ],
+        ),
       ),
     );
   }

@@ -1,4 +1,5 @@
-import 'package:final_guitalele_project/desiction_screen.dart';
+import 'package:final_guitalele_project/desicion_screen.dart';
+import 'package:final_guitalele_project/songs_screen.dart';
 
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: DesictionScreen(),
+      home: SongListScreen(),
     );
   }
 }
