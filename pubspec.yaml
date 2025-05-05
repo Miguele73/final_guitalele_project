@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.6
 
 dev_dependencies:
   flutter_test:
@@ -21,4 +23,21 @@ flutter:
     - assets/images/
     - assets/iconImages/
    
+flutter_launcher_icons:
+  android: true
+  ios: true
+  # ios
+  image_path: "final_guitalele_project/assets/images/logo.png"
+  remove_alpha_ios: true
+  # android
+  adaptive_icon_foreground: "final_guitalele_project/assets/images/logo.png"
+ 
+
+flutter_native_splash:
+  
+
+  image: "final_guitalele_project/assets/images/logo.png"
+  android: true
+  ios: true
+  
     
